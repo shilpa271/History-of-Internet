@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="about.html">About</a>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: #80ced6;
+        }
+
+        .all-browsers > h1, .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser {
+            background: white;
+        }
+
+        .browser > h2, p {
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        .container{
+            margin:0px;
+            width: 100vw;
+            height: 100vh;
+            font-family: Calibri;
+            font-size: 20px;
+            font-weight: bold;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 75px 1fr 1fr 100px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .container div {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header{
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            font-size: 30px;
+            background-color: #80ced6;
+            font-size: 30px;
+        }
+        .content-large{
+            grid-column-start:1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: #92a8d1;
+            font-size: 20px;
+            background-image: url("background image.jpg");
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color:#92a8d1;
+            font-size: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        History Of the Internet
+    </div>
+    <div class="content-large">
+        <article class="browser">
+        TYPES OF SEARCH ENGINES
+        </article>
+        <article class="browser">
+        <li>Google</li>
+            <p>Google Search Engine is the best search engine in the world and it is also one of most popular products from Google.</p>
+            </article>
+        <article class="browser">
+            <li>Bing</li>
+            <p>Bing is Microsoft’s answer to Google and it was launched in 2009. Bing is the default search engine in Microsoft’s web browser. At Bing, they are always striving to make it a better search engine but it’s got a long way to go to give Google competition. Microsoft’s search engine provides different services including image, web and video search along with maps. </p>
+            </article>
+            <article class="browser">
+                <li>Yahoo</li>
+            <p>Yahoo & Bing compete more with each other than with Google. A recent report on netmarketshare.com tells us that Yahoo have a market share of 7.68 percent. Although a leader as a free email provider, this is declining significantly though with their recent acknowledgement that User Details & Passwords where hacked last year.</p>
+            </article>
+        </ol>
+    </div>
+    <div class="footer">  Author:Shilpa Parameshwara
+        <ul><ls><a href="https://mail.google.com/mail/u/1/#inbox">sp297@njit.edu</a></ls></ul></div>
+</div>
+</body>
+</html>
